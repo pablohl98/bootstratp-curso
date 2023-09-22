@@ -1,0 +1,191 @@
+  /* Barra de Navegación */
+  .navbar{
+    padding: 2rem;
+    background-color: #f5f6f7;
+  }
+  .navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* Estilos generales */
+  section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+  }
+  h1{
+    font-size: 2.5rem;
+    font-family: 'Pacifico', cursive;  
+  }
+  .seccion-oscura{
+    color: white;
+    background-color: #1b1b32;
+
+  }
+  .seccion-clara{
+    color: black;
+    background-color: white;
+  }
+  .seccion-titulo{
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Pacifico', cursive;
+  }
+  .seccion-descripcion{
+    font-size: 1.2rem;  
+    color: #584e4e;
+  }
+  .seccion-texto{
+    font-size: 1.2rem;
+  }
+  .texto-negro{
+    color: black;
+  }
+  .texto-blanco{
+    color: white;
+  }
+  .btn-success{
+    font-size: 1.1rem;
+    margin: 20px;
+    font-weight: bold;
+  }
+  /* Sección Hero */
+  .hero{
+    background-color: #f5f6f7;
+    min-height: 450px;
+    text-align: center;
+  }
+  .hero-principal{
+    padding: 3rem;
+  }
+  .hero-principal h2{
+    font-size: 1.5rem;
+    color: #615151;
+  }
+  /* Sección "Sobre Mí" */
+  .sobre-mi{
+    height: 500px;
+    padding: 10px;
+  }
+  .sobre-mi .contenedor{
+    max-width: 600px;
+    text-align: center;
+  }
+  /* Sección Experiencia */
+  .experiencia{
+    padding: 40px 40px 60px 40;
+    margin-top: 10px;
+  }
+  .experiencia-titulo{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  .experiencia i{
+    font-size: 2.5rem;
+    color: #7ade30;
+    background-color: #1b1b32;   
+    padding: 8px 19px;
+    border-radius: 60%;
+  }
+  .experiencia .columna{
+    padding: 20px;
+    /* border: 2px solid #8080804d; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 0.4s ease-in;
+  }
+  .experiencia .columna:hover{
+    color: white;
+    background-color: #1b1b32;
+  }
+  .badges-contenedor{
+    font-size: 17px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  .badge{
+    margin: 5px;
+  }
+  /* Seccíon Proyectos */
+  .proyectos-recientes{
+    padding: 40px;
+  }
+  .proyectos-recientes img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.9s ease;
+  }
+  .proyectos-contenedor{
+    margin-bottom: 40px;    
+  }
+  .overlay{
+    transition: all 0.9s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  .overlay p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  .proyecto:hover .overlay{
+    opacity: 1;  
+  }
+  .proyecto:hover .imagen{
+    opacity: 0.4;
+  }
+  .proyecto{
+    position: relative;
+  }
+  .overlay .iconos-contenedor{
+    display: flex;
+  }
+  .overlay i{
+    color: black;
+    font-size: 60px;
+    margin: 10px;
+  }
+  /* Seccion Artículos */
+  .articulos{
+    min-height: 400px;
+    padding: 10px;
+  }
+  .articulos .card{
+    width: 80%;
+    max-width: 600px;
+    margin: 4px;
+  }
+  .articulos .card-header{
+    font-weight: bold;
+    text-align: center;
+  }
+
+
+  /* Ocultar Aguila en dispositivos */
+  @media screen and (max-width: 767px){
+    .navbar-brand{
+      display: none;
+    }
+  }
+  @media screen and (max-width: 400px){
+    .overlay p{
+      font-size: 18px;
+    }
+    .overlay i{
+      font-size: 40px;
+    }
+  }
+  @media screen and (min-width: 700px){
+  }
+  

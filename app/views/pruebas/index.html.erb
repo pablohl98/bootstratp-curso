@@ -1,0 +1,264 @@
+<html lang="es">
+<head>
+  <%# Metadatos a continuacion %>
+  <meta charset="utf-8">
+  <meta name="author" content="John Titor">
+  <meta name="description" content="Portafolio de desarrollo web de John Titor">
+  <meta name="keywords" content="HTML, CSS, JavaScript, React">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%# Título %>
+  <title>John Titor | Desarrollo Web Front-End</title>
+</head>
+<body>
+<%# Barra de navegación %>
+<nav class="navbar navbar-expand-md navbar-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar-toggler">
+      <a class="navbar-brand" href="#">
+        <%= image_tag("aguila.png", size: "60x60") %>
+        <%#= asset_path('icons/aguila.png')%>
+      </a>
+      <ul class="navbar-nav d-flex justify-content-center align-items-center">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sobre Mí</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Proyectos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Testimonios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<%# Sección Hero %>
+<section class="hero align-items-stretch">
+  <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+  <%= image_tag("desarrollador-ejemplo.svg", size: "200x200", style: "border-radius: 50%; margin: 20px;") %>
+  <h1>Hola soy John Titor</h1>
+  <h2>Desarrollo sitios web y escribo artículos sobre programación</h2>
+  </div>
+</section>
+<%# Sección "Sobre Mí" %>
+<section class="sobre-mi seccion-oscura">
+  <div class="contenedor">
+    <h2 class="seccion-titulo">Conoce a John Titor</h2>
+    <p class="seccion-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Assumenda eius temporibus quos delectus saepe aliquid mollitia quaerat a,
+    perferendis autem rerum doloribus nihil neque sint, facilis voluptates 
+    minima officiis molestiae!Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Assumenda eius temporibus quos delectus saepe aliquid mollitia quaerat a,
+    perferendis autem rerum doloribus nihil neque sint, facilis voluptates 
+    minima officiis molestiae!</p>
+
+  </div>
+</section>
+<%# Sección Experiencia %>
+<section class="experiencia seccion-clara">
+  <div class="container text-center">
+    <div class="row">
+      <%# Desarrollo Web %>
+      <div class="columna col-12 col-md-4">
+        <i class="bi bi-trophy"></i>
+        <p class="experiencia-titulo">Desarrollo web</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Assumenda eius temporibus quos delectus saepe aliquid mollitia quaerat a,
+          perferendis autem rerum doloribus nihil neque sint, facilis voluptates 
+          minima officiis molestiae!</p>
+        <div class="badges-contenedor">
+          <span class="badge text-bg-info">HTML</span>       
+          <span class="badge text-bg-info">CSS</span>
+          <span class="badge text-bg-info">Javascript</span>
+          <span class="badge text-bg-info">SQL</span>
+        </div>  
+      </div>
+      <%# Artículos %>
+      <div class="columna col-12 col-md-4">
+        <i class="bi bi-pencil-square"></i>
+        <p class="experiencia-titulo">Artículos</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Assumenda eius temporibus quos delectus saepe aliquid mollitia quaerat a,
+          perferendis autem rerum doloribus nihil neque sint, facilis voluptates 
+          minima officiis molestiae!</p>
+        <div class="badges-contenedor">
+          <span class="badge text-bg-info">Editar</span>       
+          <span class="badge text-bg-info">Escribir</span>
+          <span class="badge text-bg-info">Blogs</span>
+        </div> 
+      </div>
+      <%# Estudios %>
+      <div class="columna col-12 col-md-4">
+        <i class="bi bi-mortarboard"></i>
+        <p class="experiencia-titulo">Estudios</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Assumenda eius temporibus quos delectus saepe aliquid mollitia quaerat a,
+          perferendis autem rerum doloribus nihil neque sint, facilis voluptates 
+          minima officiis molestiae!</p>
+        <div class="badges-contenedor">
+          <span class="badge text-bg-info">Java</span>       
+          <span class="badge text-bg-info">Python</span>
+          <span class="badge text-bg-info">Ruby</span>
+          <span class="badge text-bg-info">PHP</span>
+        </div> 
+      </div>
+    </div> 
+  </div>
+</section>
+<%# Sección Proyectos %>
+<section class="proyectos-recientes seccion-clara d-flex flex-column">
+  <h2 class="seccion-titulo texto-negro">Mis proyectos</h2>
+  <h3 class="seccion-descripcion">Estos son algunos de mis proyectos recientes</h3>
+  <%# Galeria de Proyectos %>
+  <div class="container text-center proyectos-contenedor">
+    <div class="row">
+    <%# Proyecto 1 %>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <div class="imagen"><%= image_tag("proyecto1.png") %></div>
+          <div class="overlay">
+            <p>Proyecto 1</p>
+            <div class="iconos-contenedor">
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-laptop"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <%# Proyecto 2 %>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <div class="imagen"><%= image_tag("proyecto2.png") %></div>
+          <div class="overlay">
+            <p>Proyecto 2</p>
+            <div class="iconos-contenedor">
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-laptop"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <%# Proyecto 3 %>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <div class="imagen"><%= image_tag("proyecto3.png") %></div>
+          <div class="overlay">
+            <p>Proyecto 3</p>
+            <div class="iconos-contenedor">
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-laptop"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <%# Proyecto 4  %>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <div class="imagen"><%= image_tag("proyecto4.png") %></div>
+          <div class="overlay">
+            <p>Proyecto 4</p>
+            <div class="iconos-contenedor">
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-laptop"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <%# Proyecto 5 %>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <div class="imagen"><%= image_tag("proyecto5.png") %></div>
+          <div class="overlay">
+            <p>Proyecto 5</p>
+            <div class="iconos-contenedor">
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-laptop"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <%# Proyecto 6 %>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="proyecto">
+          <div class="imagen"><%= image_tag("proyecto6.png") %></div>
+          <div class="overlay">
+            <p>Proyecto 6</p>
+            <div class="iconos-contenedor">
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-laptop"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+    <button type="button" class="btn btn-success">Ver más Proyectos
+      <i class="bi bi-caret-right-fill"></i>
+    </button>
+  </a>
+</section>
+<%# Artículos %>
+<section class="articulos justify-content-start">
+  <h2 class="seccion-titulo texto-negro">Artículos</h2>
+  <div class="card">
+  <div class="card-header">
+    Mas Recientes
+  </div>
+  <ul class="list-group list-group-flush">
+    <a href="https://www.google.com/search?q=imagen+de+alien" target="_blank" rel="noopener noreferrer"> 
+      <li class="list-group-item">Estamos solos en el universo?</li> 
+    </a>
+    <a href="https://www.google.com/search?q=tesis+de+hotdog" target="_blank" rel="noopener noreferrer"> 
+      <li class="list-group-item">El hot dog mas cerca del taco o del sandwich?</li> 
+    </a>
+    <a href="https://www.google.com/search?q=conflicto+entre+rusia+y+ucrania+no+afecta+el+precio+de+las+tortillas" target="_blank" rel="noopener noreferrer"> 
+      <li class="list-group-item">Conflicto entre Rusia y Ucrania no afectará el precio de las tortillas</li> 
+    </a>
+    <a href="https://www.google.com/search?q=descubre+cual+es+tu+caballero+del+zodiaco" target="_blank" rel="noopener noreferrer"> 
+      <li class="list-group-item">Descubre cual es tu caballero del zodiaco</li> 
+    </a>
+  </ul>
+  </div>
+  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+    <button type="button" class="btn btn-success">Ver más Artículos
+      <i class="bi bi-caret-right-fill"></i>
+    </button>
+  </a>
+</section>
+</body>
+<footer>
+
+
+</footer>
+</html>
