@@ -228,7 +228,7 @@
     </button>
   </a>
 </section>
-<%# Artículos %>
+<%# Sección Artículos %>
 <section class="articulos justify-content-start">
   <h2 class="seccion-titulo texto-negro">Artículos</h2>
   <div class="card">
@@ -256,6 +256,67 @@
     </button>
   </a>
 </section>
+<%# Sección Testimonios %>
+<section class="testimonios seccion-clara">
+  <h2 class="seccion-titulo">Testimonios</h2>
+  <h3 class="seccion-descripcion">Estos son algunos testimonios de mis clientes...</h3>
+  <%# Carrusel %>
+  <div id="testimonios-carrusel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="container">
+          <%= image_tag("cliente1.svg", class: "testimonio-imagen rounded-circle", alt: "cliente1") %>
+          <p class="testimonio-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Assumenda eius temporibus quos delectus saepe aliquid mollitia quaerat a,
+            perferendis autem rerum doloribus nihil neque sint, facilis voluptates 
+            minima officiis molestiae!</p>
+          <div class="testimonio-info">
+            <p class="cliente">Magdaleno Mercado</p>
+            <p class="cargo">Presidente de la ONU</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <%= image_tag("cliente2.svg", class: "testimonio-imagen rounded-circle", alt: "cliente2") %>
+          <p class="testimonio-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Assumenda eius temporibus quos delectus saepe aliquid mollitia quaerat a,
+            perferendis autem rerum doloribus nihil neque sint, facilis voluptates 
+            minima officiis molestiae!</p>
+          <div class="testimonio-info">
+            <p class="cliente">Juana Guereca</p>
+            <p class="cargo">Supervisora de diseño</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+        <%= image_tag("cliente3.svg", class: "testimonio-imagen rounded-circle", alt: "cliente2") %>
+        <p class="testimonio-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Assumenda eius temporibus quos delectus saepe aliquid mollitia quaerat a,
+        perferendis autem rerum doloribus nihil neque sint, facilis voluptates 
+        minima officiis molestiae!</p>
+        <div class="testimonio-info">
+          <p class="cliente">Alberto Coyote</p>
+          <p class="cargo">Persona Importante</p>
+        </div>
+        </div>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+</section>
+
+
+
 </body>
 <footer>
 
