@@ -1,11 +1,17 @@
   /* Barra de Navegación */
   .navbar{
     padding: 2rem;
-    background-color: #f5f6f7;
+    color: white;
   }
   .navbar-collapse{
     align-items: center;
     justify-content: space-between;
+  }
+  .navbar a{
+    color: white;
+  }
+  .navbar a:hover{
+    color: #BCED91;
   }
   /* Estilos generales */
   section{
